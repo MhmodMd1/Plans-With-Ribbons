@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+}
+
+.wraper {
+    background-color: #E8F4FC;
+    width: 100%;
+    height: calc(100vh + 250px);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px , 1fr));
+    gap: 40px;
+    align-items: center;
+}
+
+.wraper .box {
+    background-color: white;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.wraper .box:nth-child(2) {
+    margin-top: 120px;
+}
+.wraper .box:last-child {
+    margin-top: 190px;
+}
+.wraper .box span {
+    font-size: 50px;
+    margin: auto;
+    display: block;
+    position: relative;
+    width: fit-content;
+    margin-top: 30px;
+    font-weight: light;
+}
+.wraper .box span::before {
+    content: "$";
+    position: absolute;
+    left: -18px;
+    top: 10px;
+    font-size: 35px;
+}
+.wraper .box h2 {
+    background-color: #13C8A6;
+    width: fit-content;
+    padding: 0px 50px;
+    color: white;
+    margin-left: -10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: relative;
+    margin-top: 20px;
+}
+.wraper .box h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -10px;
+    border-width: 5px;
+    border-color: transparent #14b396 #12ad90 transparent;
+    border-style: solid;
+}
+
+.wraper .box .info {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.wraper .box .info p {
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: medium;
+}
+.wraper .box .info p:first-of-type {
+    margin-bottom: 20px;
+}
+.wraper .box a {
+    display: block;
+    margin: auto;
+    background-color: #13C8A6;
+    width: fit-content;
+    color: white;
+    padding: 10px 30px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 6px;
+}
+.wraper .box .yellow {
+    background-color: #EFCB53;
+}
+.wraper .box .yellow::before {
+    border-color: transparent #d0b047 #caac4b transparent;
+}
+.wraper .box .blue {
+    background-color: #555FAE;
+}
+.wraper .box .blue::before {
+    border-color: transparent #454d8e #4c559a transparent;
+}
